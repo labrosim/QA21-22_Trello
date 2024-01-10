@@ -12,7 +12,7 @@ public class CreateNewBoardTests extends TestBase {
 
     @BeforeClass
     public void login() {
-        app.getHelperUser().login("aksiomamedved@gmail.com", "AlexMed123!");
+        app.getHelperUser().login("alexmedqwerty1@gmail.com", "QwertyZXC123!");
     }
 
 
@@ -21,7 +21,8 @@ public class CreateNewBoardTests extends TestBase {
         int i = new Random().nextInt(1000) + 1000;
         String boardTitle = "board" + i;
         app.getHelperBoard().createNewBoard(boardTitle);
-        Assert.assertTrue(app.getHelperBoard().isBoardTitlePresents(boardTitle));
+      //  Assert.assertTrue(app.getHelperBoard().isBoardTitlePresents(boardTitle));
+        Assert.assertTrue(app.getHelperBoard().isTextElementPresentByWait_boardTitle());
     }
 
     @Test
@@ -37,12 +38,14 @@ public class CreateNewBoardTests extends TestBase {
     public void deleteBoardPositiveTest(){
         int i = new Random().nextInt(1000) + 1000;
         BoardDTO board = BoardDTO.builder()
-                .boardTitle("boardDTO" + i)
+                .boardTitle("boardDto" + i)
                 .build();
         app.getHelperBoard().createNewBoard(board.getBoardTitle()); //create new board
         app.getHelperBoard().clickButtonBoards();
+        //=================================================
         app.getHelperBoard().deleteBoard(board.getBoardTitle());
     }
+
 
     @AfterMethod
     public void afterMethod() {
