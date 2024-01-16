@@ -1,0 +1,8 @@
+18:21:48.116 [Test worker] INFO  manager.ApplicationManager - opened  --> https://trello.com/home
+18:21:48.146 [Test worker] INFO  manager.ApplicationManager - URL --> https://trello.com/homestart testing --> 2024-01-15
+18:21:48.201 [Test worker] INFO  manager.HelperBase - find element --> By.xpath: //a[@data-uuid='MJFtCCgVhXrVl7v9HA7EH_login']
+18:21:49.595 [Test worker] INFO  manager.HelperBase - find element --> By.cssSelector: #username
+18:21:50.910 [Test worker] INFO  manager.HelperBase - find element --> By.cssSelector: #login-submit
+18:21:51.597 [Test worker] INFO  manager.HelperBase - find element --> By.cssSelector: #password
+18:21:51.980 [Test worker] INFO  manager.HelperBase - find element --> By.cssSelector: #login-submit
+18:21:57.064 [Test worker] INFO  manager.ApplicationManager - stop testing --> 2024-01-15

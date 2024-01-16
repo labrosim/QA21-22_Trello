@@ -59,7 +59,7 @@ public class HelperBoard extends HelperBase{
         System.out.println(xPathBoardTitle);
         clickBase(By.xpath(xPathBoardTitle));
     }
-    public boolean isTextElementPresentByWait(By locator, String text, int time){
-        return new WebDriverWait(driver, time).until(ExpectedConditions.textToBePresentInElement(locator, text));
-    }
+//    public boolean isTextElementPresentByWait(By locator, String text, int time){
+//        return new WebDriverWait(driver, time).until(ExpectedConditions.textToBePresentInElement(locator, text));
+//    }
 }

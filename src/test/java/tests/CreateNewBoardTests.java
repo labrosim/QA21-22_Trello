@@ -16,14 +16,14 @@ public class CreateNewBoardTests extends TestBase {
     }
 
 
-    @Test
-    public void createNewBoardPositiveTest() {
-        int i = new Random().nextInt(1000) + 1000;
-        String boardTitle = "board" + i;
-        app.getHelperBoard().createNewBoard(boardTitle);
-      //  Assert.assertTrue(app.getHelperBoard().isBoardTitlePresents(boardTitle));
-        Assert.assertTrue(app.getHelperBoard().isTextElementPresentByWait_boardTitle());
-    }
+//    @Test
+//    public void createNewBoardPositiveTest() {
+//        int i = new Random().nextInt(1000) + 1000;
+//        String boardTitle = "board" + i;
+//        app.getHelperBoard().createNewBoard(boardTitle);
+//      //  Assert.assertTrue(app.getHelperBoard().isBoardTitlePresents(boardTitle));
+//        Assert.assertTrue(app.getHelperBoard().isTextElementPresentByWait_boardTitle());
+//    }
 
     @Test
     public void createNewBoardPositiveTest_Lombok() {

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -12,12 +14,15 @@ public class HelperBase {
 
     WebDriver driver;
 
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
+
     public HelperBase(WebDriver driver) {
         this.driver = driver;
     }
 
     private WebElement findElementBase(By locator){
-        System.out.println(locator);
+       // System.out.println(locator);
+        logger.info("find element --> "+locator);
         return driver.findElement(locator);
     }
 
